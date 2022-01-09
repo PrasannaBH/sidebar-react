@@ -11,21 +11,6 @@ function Sidebar() {
         switchToggled ? setswitchToggled(false) : setswitchToggled(true);
     }
 
-
-    // const [sidebar, setSidebar] = useState(false);
-    // const showSidebar = () => setSidebar(!sidebar)
-
-    // let btn = document.querySelector("#btn");
-    // let sidebar = document.querySelector(".sidebar");
-    // let searchBtn = document.querySelector("");
-
-    // btn.onclick = function() {
-    //     sidebar.classList.toggle("active");
-    // }
-    // searchBtn.onclick = function() {
-    //     sidebar.classList.toggle("active");
-    // }
-
     return (
         <>
             <body>
