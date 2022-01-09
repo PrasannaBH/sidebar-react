@@ -1,19 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react';
 import 'boxicons';
 import './Sidebar.css';
 
 function Sidebar() {
 
+
+    const [switchToggled, setswitchToggled] = useState(false)
+
+    const ToggleSwitch = () => {
+        switchToggled ? setswitchToggled(false) : setswitchToggled(true);
+    }
+
+
     // const [sidebar, setSidebar] = useState(false);
     // const showSidebar = () => setSidebar(!sidebar)
 
-    let btn = document.querySelector("#btn");
-    let sidebar = document.querySelector(".sidebar");
+    // let btn = document.querySelector("#btn");
+    // let sidebar = document.querySelector(".sidebar");
     // let searchBtn = document.querySelector("");
 
-    btn.onclick = function() {
-        sidebar.classList.toggle("active");
-    }
+    // btn.onclick = function() {
+    //     sidebar.classList.toggle("active");
+    // }
     // searchBtn.onclick = function() {
     //     sidebar.classList.toggle("active");
     // }
@@ -21,13 +29,13 @@ function Sidebar() {
     return (
         <>
             <body>
-                <div className="sidebar">
+                <div className={switchToggled ? "sidebar active" : "sidebar"}>
                     <div className="logo_content">
                         <div className="logo">
                             <box-icon type='logo' name='react'></box-icon>
                             <div className="logo_name">The App</div>
                         </div>
-                        <box-icon name='menu' id="btn"></box-icon>
+                        <box-icon name='menu' id="btn" onClick={ToggleSwitch}></box-icon>
                     </div>
                     <ul className="nav_list">
                         <li>
