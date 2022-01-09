@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/sidebar-react/static/css/main.18bc81a3.css",
+    "main.css": "/sidebar-react/static/css/main.e4ca9945.css",
     "main.js": "/sidebar-react/static/js/main.a7018f76.js",
     "index.html": "/sidebar-react/index.html",
-    "main.18bc81a3.css.map": "/sidebar-react/static/css/main.18bc81a3.css.map",
+    "main.e4ca9945.css.map": "/sidebar-react/static/css/main.e4ca9945.css.map",
     "main.a7018f76.js.map": "/sidebar-react/static/js/main.a7018f76.js.map"
   },
   "entrypoints": [
-    "static/css/main.18bc81a3.css",
+    "static/css/main.e4ca9945.css",
     "static/js/main.a7018f76.js"
   ]
 }
